@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Task Manager</h1>
+
+      <form id="task-form" class="task-form">
+        <input
+          type="text"
+          id="task-name"
+          class="task-input"
+          placeholder="Task Name"
+          required
+        />
+        <textarea
+          id="task-input"
+          class="task-input"
+          placeholder="Enter task description"
+          required
+        ></textarea>
+        <input
+          type="text"
+          id="assigned-to"
+          class="task-input"
+          placeholder="Assigned to"
+          required
+        />
+        <input type="date" id="due-date" class="task-input" required />
+        <select id="priority" class="task-input" required>
+          <option value="low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
+        </select>
+        <select id="status" class="task-input" required>
+          <option value="todo">To Do</option>
+          <option value="inprogress">In Progress</option>
+          <option value="completed">Completed</option>
+        </select>
+        <button type="submit" class="add-button">Add Task</button>
+      </form>
+
+      <div class="search-container">
+        <input
+          type="text"
+          id="search-input"
+          class="search-input"
+          placeholder="Search tasks"
+        />
+      </div>
+
+      <div class="kanban-board">
+        <div class="kanban-column">
+          <h2 class="column-title">To Do</h2>
+          <div id="todo-column" class="task-container"></div>
+        </div>
+        <div class="kanban-column">
+          <h2 class="column-title">In Progress</h2>
+          <div id="inprogress-column" class="task-container"></div>
+        </div>
+        <div class="kanban-column">
+          <h2 class="column-title">Completed</h2>
+          <div id="completed-column" class="task-container"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="task.js"></script>
+  </body>
+</html>

@@ -1,0 +1,102 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(249, 249, 236);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.task-form {
+  margin-bottom: 20px;
+}
+
+.task-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.add-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-button:hover {
+  background-color: #0056b3;
+}
+
+.kanban-board {
+  display: flex;
+  justify-content: space-between;
+}
+
+.kanban-column {
+  flex: 1;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+}
+
+.column-title {
+  margin-top: 0;
+  font-size: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.search-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/*Designing each task based on priority*/
+.task-card {
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.task-card.priority-low {
+  background-color: lightgreen;
+}
+
+.task-card.priority-medium {
+  background-color: orange;
+}
+
+.task-card.priority-high {
+  background-color: rgb(244, 63, 43);
+}
